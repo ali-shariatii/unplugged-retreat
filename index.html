@@ -18,16 +18,18 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <!--nav-->
-  <div>
-    <figure>
-      <a href="./index.html"><img src="assets/img/unpluggedlogo.png" alt="unplugged logo"></a> 
-    </figure>
+  <div id="nav-wrapper">
+      <figure>
+        <a href="./index.html"><img src="assets/img/unpluggedlogo.png" alt="unplugged logo"></a> 
+      </figure>
     <hr>
     <nav>
       <ul>
@@ -44,8 +46,8 @@
     </div>
   </header>
   
-  <!--download-itenary-->
-  <div>
+  <!--download itenerary-->
+  <div id="itenerary-wrapper">
     <div>
       <h3>Want to join the next retreat? </h3>
       <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
@@ -53,51 +55,55 @@
     <div>
       <h3>Find out more</h3>
       <div>
-        <input type="email" name="email" value="email address"><br>
-        <input type="button" name="button" value="DOWNLOAD ITENERARY">
+        <input type="email" name="email" placeholder="email address">
+        <input id="btn" type="button" name="button" value="DOWNLOAD ITENERARY">
       </div>
     </div>
   </div>
 
   <!--amenities-->
-  <div>
+  <div id="amenities-wrapper">
     <h3>Have the work week you always dreamed of — without the bad wifi.</h3>
     <div>
       <figure>
-        <span></span>
+        <span class="icon-campground"></span><br><br>
         <figcaption>Located in a peaceful bungalow outside of Lake Geneva, Wisconsin. </figcaption>
       </figure>
       <figure>
-        <span></span>
+        <span class="icon-bed"></span><br><br>
         <figcaption>12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</figcaption>
       </figure>
       <figure>
-        <span></span>
+        <span class="icon-utensils"></span><br><br>
         <figcaption>Private chef team providing on demand meals - just like your team kitchen.</figcaption>
       </figure>
       <figure>
-        <span></span>
+        <span class="icon-shoe-prints"></span><br><br>
         <figcaption>5 outdoor obstacle courses, including private beach ½ mile from bungalow.</figcaption>
       </figure>
       <figure>
-        <span></span>
+        <span class="icon-smile-o"></span><br><br>
         <figcaption>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</figcaption>
       </figure>
       <figure>
-        <span></span>
+        <span class="icon-wifi"></span><br><br>
         <figcaption>Dedicated computer room for times that you must wifi.</figcaption>
       </figure>
     </div>
   </div>
 
   <!--previous-retreats-->
-  <div>
-    <h2>Be a better team in 5 days, like these.</h2>
-    <figure>
-      <img src="assets/img/omar-lopez-296944-unsplash.jpg" alt="group photo">
-      <figcaption>LaCrue Bottling Co. October 2017</figcaption>
-    </figure>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+  <div id="retreats-wrapper">
+    <h3>Be a better team in 5 days, like these.</h3>
+    <div>
+      <figure>
+        <img src="assets/img/omar-lopez-296944-unsplash.jpg" alt="group photo">
+      </figure>
+      <div>
+        <h4>LaCrue Bottling Co. October 2017</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+    </div>
   </div>
 
   <!--footer-->
@@ -108,15 +114,15 @@
         <p>555-555-5555<br>hello@unplugged.com</p>
       </div>
       <div>
-        <h4>Social</h4>
+        <h3>Social</h3>
         <ul>
-          <li><a href="https://wwww.facebook.com/"></a></li>
-          <li><a href="https://wwww.twitter.com/"></a></li>
-          <li><a href="https://wwww.instagram.com/"></a></li>
+          <li><a href="https://wwww.facebook.com/" class="icon-facebook"></a></li>
+          <li><a href="https://wwww.twitter.com/" class="icon-twitter"></a></li>
+          <li><a href="https://wwww.instagram.com/" class="icon-instagram"></a></li>
         </ul>
       </div>
     </address>
-    <p>copyright 2019 | Unplugged</p>
+    <p>Copyright 2019 | Unplugged</p>
   </footer>
 
 

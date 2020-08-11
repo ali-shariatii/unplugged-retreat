@@ -45,9 +45,10 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px solid #3a3a3a;
+  margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /*
@@ -86,6 +87,229 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  /*global*/
+  html, body {
+    margin: 0;
+    padding: 0;
+    color: #e2e3ed;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  a, a:hover, a:visited, a:active {
+    color: #e2e3ed;
+  }
+
+   /* nav */
+   #nav-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #202322;
+      position: fixed;
+      width: 100vw;
+   }
+
+   #nav-wrapper figure {
+      width: 61%;
+      text-align: center;
+   }
+
+   #nav-wrapper img {
+     width: 100%;
+     max-width: 20rem;
+   }
+ 
+   nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.3rem;
+
+   }
+   nav ul {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    list-style-type: none;
+    padding: 0;
+   }
+
+   nav ul li {
+     margin: 0 1.8rem;
+     display: inline-block;
+     font-weight: bolder;
+   }
+
+   nav a {
+     text-decoration: none;
+   }
+
+  /* headear */
+   header {
+    border-top: .01px solid #202322;
+    border-bottom: .01px solid #527158;
+    background: url(../assets/img/jake-melara-30679-unsplash.jpg) top no-repeat;
+    background-size: cover;
+    height: 100vh;
+   }
+
+   header > div {
+    padding: 9.5rem 2.5rem 0 2.5rem;
+    font-size: 1.4rem;
+   }
+
+  /* download itenerary */
+  #itenerary-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem 2.5rem 4rem 2.5rem;
+    background-color: #527158;
+
+  }
+
+  #itenerary-wrapper div {
+    width: 100%;
+  }
+
+  #itenerary-wrapper h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+  }
+
+  #itenerary-wrapper p {
+    margin-top: 0.85rem;
+    padding-top: 0;
+  }
+
+  #itenerary-wrapper input {
+    margin-top: .85rem;
+    width: 100%;
+    padding: 1rem ;
+    box-sizing: border-box;
+  }
+
+  #btn {
+    background-color: #2a423a;
+    color: #e2e3ed;
+    font-size: 1.1rem;
+    border: none;
+  }
+  
+  /*amenities*/
+  #amenities-wrapper {
+    background: url(../assets/img/rawpixel-800820-unsplash1.jpg) no-repeat bottom;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+
+  }
+
+  #amenities-wrapper > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  #amenities-wrapper h3, #retreats-wrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #retreats-wrapper h4 {
+    font-size: 1.2rem;
+  }
+
+  #amenities-wrapper span {
+    font-size: 4.5rem;
+  }
+
+  #amenities-wrapper > div > figure {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 3.5rem;
+  }
+
+  /*previous retreats*/
+  #retreats-wrapper {
+    background-color: #2a423a;
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+
+  }
+
+  #retreats-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #retreats-wrapper div figure {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  #retreats-wrapper img {
+    width: 100%;
+  }
+
+  /*footer*/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #202322;
+
+  }
+
+  footer > address {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-style: normal;
+  }
+
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem 1rem 1rem;
+    background-color: #527158;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  footer a {
+    text-decoration: none;
+    margin: auto;
+    font-size: 1.35rem;
+  }
+
+  footer > p {
+    font-size: .9rem;
+  }
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
