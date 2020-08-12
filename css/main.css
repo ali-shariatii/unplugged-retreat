@@ -93,7 +93,7 @@ textarea {
     padding: 0;
     color: #e2e3ed;
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
   }
 
   a, a:hover, a:visited, a:active {
@@ -107,8 +107,7 @@ textarea {
       align-items: center;
       flex-flow: row wrap;
       background-color: #202322;
-      position: fixed;
-      width: 100vw;
+
    }
 
    #nav-wrapper figure {
@@ -119,26 +118,27 @@ textarea {
    #nav-wrapper img {
      width: 100%;
      max-width: 20rem;
+     
    }
  
    nav {
     display: flex;
     justify-content: center;
-    width: 100%;
     font-size: 1.3rem;
 
    }
+
    nav ul {
     display: flex;
-    justify-content: center;
-    width: inherit;
+    justify-content: space-evenly;
+    line-height: 2rem;
     list-style-type: none;
     padding: 0;
    }
 
    nav ul li {
-     margin: 0 1.8rem;
      display: inline-block;
+     padding: 0 3rem;
      font-weight: bolder;
    }
 
@@ -150,13 +150,13 @@ textarea {
    header {
     border-top: .01px solid #202322;
     border-bottom: .01px solid #527158;
-    background: url(../assets/img/jake-melara-30679-unsplash.jpg) top no-repeat;
+    background: url(../assets/img/jake-melara-30679-unsplash.jpg) center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 92vh;
    }
 
    header > div {
-    padding: 9.5rem 2.5rem 0 2.5rem;
+    padding: 2rem 2.5rem 0 2.5rem;
     font-size: 1.4rem;
    }
 
@@ -167,7 +167,6 @@ textarea {
     justify-content: center;
     padding: 1rem 2.5rem 4rem 2.5rem;
     background-color: #527158;
-
   }
 
   #itenerary-wrapper div {
@@ -207,7 +206,6 @@ textarea {
     flex-flow: row wrap;
     justify-content: center;
     padding: 2.5rem 2.5rem 4rem 2.5rem;
-
   }
 
   #amenities-wrapper > div {
@@ -252,7 +250,6 @@ textarea {
   #retreats-wrapper div figure {
     padding: 0;
     margin: 0;
-
   }
 
   #retreats-wrapper img {
@@ -266,7 +263,7 @@ textarea {
     align-items: center;
     flex-flow: column wrap;
     background-color: #202322;
-
+    padding: 0.3rem 2.5rem 0.3rem 2.5rem;
   }
 
   footer > address {
@@ -274,10 +271,12 @@ textarea {
     flex-flow: column wrap;
     text-align: center;
     font-style: normal;
+    width: 100%;
   }
 
   footer ul {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -303,6 +302,53 @@ textarea {
   footer > p {
     font-size: .9rem;
   }
+
+  /*about > mission section*/
+  #mission-wrapper {
+    background-color: #527158;
+    padding: 2rem 2.5rem 4rem 2.5rem;
+  }
+
+  #mission-wrapper > h2, #contact-wrapper > h2, #faq-wrapper > h2 {
+    font-size: 1.7rem;
+  }
+
+  #mission-sub-wrapper, #contact-sub-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #contact-wrapper {
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    background-color: #2a423a;
+  }
+
+  #contact-wrapper p,  #contact-wrapper h4,  #contact-wrapper h2{
+    margin: .5rem;
+  }
+
+  #contact-wrapper h4 {
+    font-size: 1.35rem;
+  }
+
+  #contact-sub-wrapper {
+    font-style: normal;
+  }
+
+  /*faq > faq section*/
+  #faq-wrapper {
+    background-color: #527158;
+    padding: 2rem 2.5rem 4rem 2.5rem;
+  }
+
+  #faq-wrapper > h2, #faq-wrapper p {
+    margin-bottom: 3rem;
+  }
+
+  #faq-wrapper h3 {
+    font-size: 1.3rem;
+  }
+
 
 
 
@@ -399,8 +445,150 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  #nav-wrapper, header, #itenerary-wrapper, #amenities-wrapper, #retreats-wrapepr, #faq-wrapper, #contact-wrapper, #mission-wrapper, footer {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  #nav-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  hr {
+  display: none;
+  }
+
+  #nav-wrapper figure {
+    width: fit-content;
+    margin: 0;
+    
+  }
+
+  #nav-wrapper img {
+    width: 15rem;
+  }
+
+  nav ul {
+  display: flex;
+  }
+
+  nav ul li {
+    padding: 0 0 0 5rem;
+  }
+
+  header > div {
+    padding-top: 1rem;
+    padding-left: 0;
+   }
+
+   header h2 {
+    font-size: 3.5rem;
+   }
+
+  #itenerary-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  #itenerary-sub-wrapper-1 {
+    padding-right: 1.25rem;
+  }
+
+  #itenerary-sub-wrapper-2 {
+    padding-left: 1.25rem;
+  }
+
+  #amenities-wrapper > div {
+    justify-content: space-evenly;
+  }
+
+  #amenities-wrapper > div > figure {
+    width: 30%;
+  }
+
+  #retreats-wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  #retreats-wrapper > div > div, #retreats-wrapper > div > figure{
+    width: 50%;
+  }
+
+  #retreats-wrapper > div > div > h4 {
+    margin: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0 0;
+  }
+
+  #retreats-wrapper > div > div > p {
+    margin: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0 0;
+  }
+
+  footer > address {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #faq-wrapper, #mission-wrapper {
+    padding-top: 5rem;
+  }
+
+  #faq-wrapper > div, #mission-sub-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #faq-wrapper > div > div, #mission-sub-wrapper > div {
+    width: 45%;
+  }
+
+  #contact-sub-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 1.1em;
+  }
+
+  #nav-wrapper, header, #itenerary-wrapper, #amenities-wrapper, #retreats-wrapepr, #faq-wrapper, #contact-wrapper, #mission-wrapper, footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  #faq-wrapper > div > div {
+    width: 48%;
+  }
+
+  #amenities-wrapper > div > figure {
+    width: 25%;
+  }
+
+  #retreats-wrapper > div {
+    align-items: flex-start;
+  }
+
+  #contact-sub-wrapper {   
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+  #contact-sub-wrapper > div {
+    width: 45%;
+  }
+
+  #contact-sub-wrapper > div > p, #contact-sub-wrapper > div > h4, #contact-wrapper h2 {
+    padding: .5rem 0 .5rem 0;
+    margin: .5rem 0 .5rem ;
+  } 
 }
 
 @media print,
