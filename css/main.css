@@ -200,7 +200,7 @@ textarea {
   
   /*amenities*/
   #amenities-wrapper {
-    background: url(../assets/img/rawpixel-800820-unsplash1.jpg) no-repeat bottom;
+    background: url(../assets/img/rawpixel-800820-unsplash.jpg) no-repeat bottom;
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
@@ -303,6 +303,7 @@ textarea {
     font-size: .9rem;
   }
 
+
   /*about > mission section*/
   #mission-wrapper {
     background-color: #527158;
@@ -333,6 +334,20 @@ textarea {
 
   #contact-sub-wrapper {
     font-style: normal;
+  }
+
+  /*about > map section*/
+  #map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    height: 30rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
   /*faq > faq section*/
@@ -556,7 +571,7 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 1.1em;
+    font-size: 1.em;
   }
 
   #nav-wrapper, header, #itenerary-wrapper, #amenities-wrapper, #retreats-wrapepr, #faq-wrapper, #contact-wrapper, #mission-wrapper, footer {
